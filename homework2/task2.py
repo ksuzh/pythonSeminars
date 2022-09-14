@@ -15,3 +15,9 @@ for i in range(1, N+1):
     print(mult, end=' ')
 
 
+# n = int(input())                 - лучше решение, тк это список, и его                                     потом 
+# res = [1]                          можно использовать потом
+# for i in range(2, n + 1):
+#     res.append(res[-1] * i)
+# print(res)
+
