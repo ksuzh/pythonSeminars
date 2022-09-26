@@ -8,16 +8,33 @@
 
 n = int(input('input the number: '))
 
-def fib(k):
-    if k > -1:
-        if k == 0:
-            return 0
-        elif k == 1:
-            return 1
-        else:
-            return fib(k-1) + fib(k-2)
-    if k <= -1:
-        return fib(k+2) - fib (k+1)
-print(fib(n))
+
+# def lst_fibonacci_num():
+#     num = int(input('Введите любое натуральное число: '))
+# fib = []
+# a, b = 1, 1
+# for i in range(num):
+#     fib.append(a)
+#     a, b = b, a + b
+# a, b = 0, 1
+# for j in range(num + 1):
+#     fib.insert(0, a)
+#     a, b = b, a - b
+# print(f'Список чисел Фибоначчи для {num}: {fib}')
 
 
+# lst_fibonacci_num()
+
+
+fib = int(input('5# введите число for fib = '))
+res_5 = []
+for i in range(fib+1):
+    if i==0:
+        res_5.append(i)
+    elif i==1:
+        res_5.append(i)
+        res_5.insert(0, i)
+    else:
+        res_5.append(res_5[len(res_5)-1]+res_5[len(res_5)-2])
+        res_5.insert(0, (-1)**(i-1)*res_5[len(res_5)-1])
+print(res_5)
